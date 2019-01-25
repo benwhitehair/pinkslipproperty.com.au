@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
+    title: `Pinkslip Property`,
     description: `Gatsby starter styled with Tailwind`,
     author: `@taylorbryant`,
   },
@@ -39,4 +39,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-}
+};
