@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Pinkslip Property`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `PinkSlip Property`,
+    description: `Domestic property and maintenance services`,
+    author: `@luke_bennett_`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,9 +22,9 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        theme_color: `#f17bac`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-postcss`,
