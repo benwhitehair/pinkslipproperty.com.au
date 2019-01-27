@@ -27,7 +27,7 @@ const CTA = () => (
       </p>
       <div className="flex items-center justify-center">
         <a
-          className="bg-indigo-darker font-bold font-condensed inline-block px-16 py-6 no-underline text-white"
+          className="bg-indigo-darker font-bold font-condensed inline-block px-16 py-6 no-underline shadow text-white"
           href="#services"
         >
           <div className="flex items-center leading-none">

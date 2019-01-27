@@ -8,7 +8,7 @@ const CTA3 = () => (
         Call us to find out more about pink slips
       </h2>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center shadow">
         <a
           className="bg-indigo-darker font-bold font-condensed inline-block px-16 py-6 no-underline text-white"
           href="#services"
