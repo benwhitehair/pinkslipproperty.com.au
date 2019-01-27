@@ -1,28 +1,35 @@
 import React from 'react';
+import Check from '../images/check.svg';
+import '../css/beach.css';
 
 const Hero = () => (
-  <section className="bg-pink font-condensed py-8 md:py-32 w-full">
+  <section className="beach bg-no-repeat bg-top bg-pink bg-cover flex flex-col font-condensed h-full justify-center py-8 md:py-32 text-center w-full">
     <div className="font-bold leading-normal max-w-md mb-8 md:mb-16 mx-auto px-4 uppercase text-white text-3xl md:text-4xl w-full">
       <p>Property pink slips just $199</p>
       <p>
         Your complete safety net package to ensure your investment is protected
       </p>
     </div>
-    <div>
-      <p className="bg-white font-bold inline-flex leading-loose px-4 py-3 text-sm md:text-xl uppercase">
-        <span>
-          <span className="mr-2 text-pink">24/7</span>
-          <span className="mr-2">emergency number</span>
-          <span>
-            <a className="no-underline text-pink" href="tel:0404222244">
-              0404&nbsp;222&nbsp;244
-            </a>
-          </span>
+    <div className="bg-white flex flex-wrap font-bold items-center leading-loose mx-auto px-4 py-3 text-sm md:text-xl uppercase">
+      <div>
+        <span className="mr-2 text-pink">24/7</span>
+        <span className="mr-2">emergency number</span>
+        <span className="mr-4 md:mr-16">
+          <a className="no-underline text-pink" href="tel:0404222244">
+            0404&nbsp;222&nbsp;244
+          </a>
         </span>
-        <span className="ml-12">
-          <span className="normal-case">Make an appointment</span>
-        </span>
-      </p>
+      </div>
+      <div className="normal-case">
+        <a className="no-underline text-grey-darkest" href="#contact">
+          <div className="flex items-center leading-none">
+            <span className="mr-2">Make an appointment</span>
+            <span className="h-6 w-6">
+              <img src={Check} alt="" />
+            </span>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 );

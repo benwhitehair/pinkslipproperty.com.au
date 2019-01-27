@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   --margin: 1rem;
-  --modifier: calc(55rem - 100%);
+  --modifier: calc(50rem - 100%);
   margin: calc(var(--margin) * -1);
 }
 

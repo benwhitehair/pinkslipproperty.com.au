@@ -6,10 +6,10 @@ const PSPCare = () => (
     <div className="flex flex-wrap leading-normal max-w-2xl mx-auto py-16">
       <div className="px-4 w-full md:w-2/5">
         <h3 className="font-condensed mb-4 text-3xl uppercase">
-          Pinkslip priority care
+          Pink Slip Priority Care
         </h3>
         <p className="mb-4">
-          PinkSlip Property service your property as if it were our own – we
+          Pink Slip Property service your property as if it were our own – we
           invest our knowledge into your property.
         </p>
         <p className="mb-4">

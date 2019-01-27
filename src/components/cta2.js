@@ -1,7 +1,8 @@
 import React from 'react';
+import '../css/background.css'
 
 const CTA2 = () => (
-  <section className="bg-pink px-4 py-16 text-center text-white">
+  <section className="background bg-pink px-4 py-16 text-center text-white">
     <h2 className="font-condensed mb-4 text-4xl uppercase">
       Combine all our checks for the all inclusive total of{' '}
       <span className="text-5xl">$199</span>

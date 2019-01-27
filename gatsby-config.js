@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `PinkSlip Property`,
+    title: `Pink Slip Property`,
     description: `Domestic property and maintenance services`,
     author: `@luke_bennett_`,
   },

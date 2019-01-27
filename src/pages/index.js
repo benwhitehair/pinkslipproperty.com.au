@@ -17,10 +17,7 @@ import Contact from '../components/contact';
 
 const IndexPage = () => (
   <Layout>
-    <SEO
-      title="Home"
-      keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-    />
+    <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} />
     <Hero />
     <Cards />
     <CTA />

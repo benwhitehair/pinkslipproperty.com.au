@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Logo from '../images/favicon.png';
+import '../css/hover-effect.css';
 
 const handleClick = ev => {
   ev.preventDefault();
@@ -73,34 +74,32 @@ const Header = ({ siteTitle }) => (
           id="nav"
           className="hidden md:flex md:items-center -mr-3 w-full md:w-auto"
         >
-          <div className="border-b-4 border-transparent">
-            <a
-              href="#about"
-              className="block border-t-4 border-transparent hover:border-pink md:inline-block font-bold mt-4 md:mt-0 no-underline px-4 py-4 md:py-8 uppercase text-grey-darkest"
-            >
-              About
-            </a>
+          <a
+            href="#about"
+            className="overline block md:inline-block font-bold mt-4 md:mt-0 no-underline px-4 py-4 md:py-8 uppercase text-grey-darkest"
+          >
+            About
+          </a>
 
-            <a
-              href="#services"
-              className="block border-t-4 border-transparent hover:border-pink md:inline-block font-bold mt-4 md:mt-0 no-underline px-4 py-4 md:py-8 uppercase text-grey-darkest"
-            >
-              Services
-            </a>
+          <a
+            href="#services"
+            className="overline block md:inline-block font-bold mt-4 md:mt-0 no-underline px-4 py-4 md:py-8 uppercase text-grey-darkest"
+          >
+            Services
+          </a>
 
-            <a
-              href="#pricing"
-              className="block border-t-4 border-transparent hover:border-pink md:inline-block font-bold mt-4 md:mt-0 no-underline px-4 py-4 md:py-8 uppercase text-grey-darkest"
-            >
-              Pricing
-            </a>
-            <a
-              href="#contact"
-              className="block border-t-4 border-transparent hover:border-pink md:inline-block font-bold mt-4 md:mt-0 no-underline px-4 py-4 md:py-8 uppercase text-grey-darkest"
-            >
-              Contact
-            </a>
-          </div>
+          <a
+            href="#pricing"
+            className="overline block md:inline-block font-bold mt-4 md:mt-0 no-underline px-4 py-4 md:py-8 uppercase text-grey-darkest"
+          >
+            Pricing
+          </a>
+          <a
+            href="#contact"
+            className="overline block md:inline-block font-bold mt-4 md:mt-0 no-underline px-4 py-4 md:py-8 uppercase text-grey-darkest"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>

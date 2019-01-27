@@ -1,0 +1,4 @@
+.background {
+  background-image: url(../images/background.png);
+  @apply bg-cover bg-no-repeat bg-top h-full w-full;
+}

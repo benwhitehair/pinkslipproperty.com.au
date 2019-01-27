@@ -1,9 +1,10 @@
 import React from 'react';
+import '../css/background.css';
 
 const CTA3 = () => (
-  <section className="bg-pink px-4 py-16 text-center text-white">
-    <div className="flex flex-wrap items-center justify-around max-w-2xl mx-auto">
-      <h2 className="font-condensed mb-4 text-4xl uppercase">
+  <section className="background bg-pink px-4 py-16 text-center text-white">
+    <div className="flex flex-wrap items-center justify-around leading-none max-w-2xl mx-auto">
+      <h2 className="font-condensed mb-4 md:mb-0 md:px-4 text-4xl uppercase">
         Call us to find out more about pink slips
       </h2>
 
