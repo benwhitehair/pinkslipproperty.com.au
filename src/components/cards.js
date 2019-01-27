@@ -4,7 +4,7 @@ import Water from '../images/card-water.png';
 import Safety from '../images/card-safety.png';
 
 const Cards = () => (
-  <div className="cards py-16 text-center">
+  <div className="cards py-16 text-center w-full">
     <div className=" mb-16 px-4">
       <img className="mb-2 w-32" src={Fire} alt="" />
       <h2 className="font-condensed mb-2 uppercase">Smoke alarms</h2>
