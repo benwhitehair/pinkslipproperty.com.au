@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
     <div className="bg-grey-darkest w-full">
       <div className="flex items-center justify-between max-w-2xl mx-auto py-2 px-4 md:px-8 w-full">
         <a
-          className="flex items-center leading-none no-underline text-white"
+          className="flex items-center leading-none no-underline text-white hover:text-pink-light"
           href="tel:0404222244"
         >
           <svg
@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
           <span>0404 222 244</span>
         </a>
         <a
-          className="flex items-center leading-none no-underline text-white"
+          className="flex items-center leading-none no-underline text-white hover:text-pink-light"
           href="mailto:pinkslipproperty@icloud.com"
         >
           <svg
@@ -46,7 +46,7 @@ const Header = ({ siteTitle }) => (
         </a>
       </div>
     </div>
-    <nav className="font-condensed py-4 md:py-0 shadow-md sticky text-lg pin-t">
+    <nav className="bg-white font-condensed py-4 md:py-0 shadow-md text-lg">
       <div className="flex flex-wrap items-center justify-between max-w-2xl mx-auto px-4 md:px-8">
         <Link
           to="/"
@@ -61,7 +61,7 @@ const Header = ({ siteTitle }) => (
           onClick={handleClick}
         >
           <svg
-            className="fill-current h-3 w-3"
+            className="fill-current h-4 w-4"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
