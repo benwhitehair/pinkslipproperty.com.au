@@ -3,14 +3,14 @@ import Check from '../images/check-pink.svg';
 import '../css/beach.css';
 
 const Hero = () => (
-  <section className="beach bg-fixed bg-no-repeat bg-top bg-pink bg-cover flex flex-col font-condensed h-full justify-center py-8 md:py-32 text-center w-full">
+  <section className="beach bg-scroll md:bg-fixed bg-no-repeat bg-top bg-cover flex flex-col font-condensed h-full justify-center py-8 md:py-32 text-center w-full">
     <div className="font-bold leading-normal max-w-md mb-8 md:mb-16 mx-auto px-4 uppercase text-white text-3xl md:text-4xl w-full">
       <p>Property pink slips just $199</p>
       <p>
         Your complete safety net package to ensure your investment is protected
       </p>
     </div>
-    <div className="bg-white flex flex-wrap font-bold items-center leading-loose mx-auto px-4 py-3 text-sm md:text-xl uppercase">
+    <div className="bg-white flex flex-wrap font-bold items-center justify-center leading-loose mx-auto px-4 py-3 text-center text-sm md:text-xl uppercase">
       <div>
         <span className="mr-2 text-pink">24/7</span>
         <span className="mr-2">emergency number</span>
