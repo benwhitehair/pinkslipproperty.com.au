@@ -22,12 +22,12 @@ const Footer = () => (
 
     <a
       href="#top"
-      className="bg-pink-dark border border-pink-darker hidden md:flex fixed font-bold h-16 items-end justify-center leading-none mb-16 mr-16 no-underline pin-b pin-r rounded-full shadow-lg text-white text-5xl w-16"
+      className="bg-pink-lighter border hidden md:flex fixed font-bold h-16 items-end justify-center leading-none mb-16 mr-16 no-underline pin-b pin-r rounded-full shadow-lg text-white text-5xl w-16"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        className="fill-current text-pink-darkest h-full w-full"
+        className="fill-current text-pink-darker h-full w-full"
       >
         <path
           className="secondary"
