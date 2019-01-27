@@ -1,23 +1,19 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer>
-    <div className="flex font-bold items-center justify-between leading-normal max-w-2xl mx-auto p-4 md:p-8 w-full">
-      <p className="flex flex-wrap">
-        <span className="mr-6">Pinkslip Property © 2019</span>{' '}
-        <span>All rights reserved</span>
-      </p>
-      <p className="flex flex-wrap">
+  <footer className="p-4">
+    <div className="flex flex-wrap font-bold leading-normal justify-between max-w-2xl mx-auto md:p-8 text-center w-full">
+      <p className="hidden md:block m-0">Pinkslip Property © 2019</p>
+      <p className="m-0 text-right md:text-left">
         <span className="mr-1">Website by</span>
-        <span>
-          <a
-            className="no-underline text-pink-dark"
-            href="https://lukebennett.com.au"
-          >
-            Luke Bennett
-          </a>
-        </span>
+        <a
+          className="no-underline text-pink-dark"
+          href="https://lukebennett.com.au"
+        >
+          Luke Bennett
+        </a>
       </p>
+      <p className="hidden md:block m-0">All rights reserved</p>
     </div>
 
     <a
