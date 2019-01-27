@@ -6,10 +6,15 @@ import SEO from '../components/seo';
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <div>
-      <h2 className="bg-yellow inline-block my-8 p-3">
-        Looks like this page is a ghost that got abducted by aliens...
-      </h2>
+    <div className="flex flex-col items-center justify-center leading-normal py-16 text-center">
+      <Link className="no-underline" to="/">
+        <h1 className="font-condensed text-grey-darkest text-5xl uppercase">
+          404: Page not found
+        </h1>
+        <p className="font-bold no-underline text-pink text-lg">
+          Click to return to the home page
+        </p>
+      </Link>
     </div>
   </Layout>
 );

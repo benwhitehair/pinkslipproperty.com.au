@@ -26,10 +26,11 @@ const Contact = () => (
       <form
         name="contact-form"
         action="/success"
-        method="POST"
+        method="post"
         className="p-4 w-full md:w-1/2"
         autoComplete="on"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
         <div className="flex flex-wrap mb-6 -mx-3">
           <div className="mb-6 px-3 w-full md:mb-0 md:w-1/2">
@@ -91,9 +92,9 @@ const Contact = () => (
           />
         </div>
         <div class="hidden">
-          <label>
-            Don’t fill this out if you're human: <input name="bot-field" />
-          </label>
+          <input type="hidden" name="form-name" value="contact" />
+          <label>Don’t fill this out if you're human:</label>
+          <input name="bot-field" />
         </div>
         <div className="flex items-center justify-end">
           <button
