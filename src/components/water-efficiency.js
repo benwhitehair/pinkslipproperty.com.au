@@ -19,16 +19,15 @@ const WaterEfficiency = () => (
           any aerators, regulators or seals that require replacing or upgrading.
         </p>
         <p className="mb-4">
-          For more information on your responsibilities{' '}
           <a
             className="font-bold no-underline text-pink"
             href="http://www.fairtrading.nsw.gov.au/ftw/Tenants_and_home_owners/Being_a_landlord/During_a_tenancy/Passing_on_water_charges.page"
           >
-            click here
+            Click here for more information on your responsibilities.
           </a>
         </p>
         <p className="mb-4">
-          PSP issues a certificate of compliance on every job
+          PSP issues a certificate of compliance on every job.
         </p>
       </div>
     </div>

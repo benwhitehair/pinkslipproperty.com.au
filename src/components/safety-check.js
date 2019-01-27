@@ -28,15 +28,14 @@ const SafetyCheck = () => (
           works necessary.
         </p>
         <p className="mb-4">
-          PSP issues a certificate of compliance on every job
+          PSP issues a certificate of compliance on every job.
         </p>
         <p className="mb-4">
-          For more information on basic household safety{' '}
           <a
             className="font-bold no-underline text-pink"
             href="http://www.fairtrading.nsw.gov.au/ftw/Tenants_and_home_owners/Being_a_landlord/Starting_a_tenancy/Safety_and_security.page"
           >
-            click here
+            Click here for more information on basic household safety.
           </a>
         </p>
       </div>
