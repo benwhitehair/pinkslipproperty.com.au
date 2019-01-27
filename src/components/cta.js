@@ -7,7 +7,7 @@ const CTA = () => (
         Does your property have a pink slip?
       </h1>
       <p className="mb-4">
-        Pink Slip Property is a Port Macquarie based company that provides
+        Pinkslip Property is a Port Macquarie based company that provides
         domestic safety and maintenance services to the Mid North Coast from
         Forster to Coffs Harbour.
       </p>
@@ -16,7 +16,7 @@ const CTA = () => (
         your owner occupier or investment property.
       </p>
       <p className="mb-4">
-        Pink Slip Property is a safety net – an umbrella of services – to ensure
+        Pinkslip Property is a safety net – an umbrella of services – to ensure
         your investment is protected, tenants are safe, and your property is
         compliant with NSW smoke alarm and other legislations governing your
         investment property.

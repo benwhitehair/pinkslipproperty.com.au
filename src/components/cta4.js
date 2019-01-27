@@ -7,7 +7,7 @@ const CTA4 = () => (
         Property pink slips just $199
       </h2>
       <p className="mb-4 text-2xl">
-        Pink Slip Property issues a certificate of compliance on every job
+        Pinkslip Property issues a certificate of compliance on every job
       </p>
       <p className="mb-4 text-2xl">Need a one off?</p>
     </div>

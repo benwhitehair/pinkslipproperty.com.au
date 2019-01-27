@@ -4,7 +4,7 @@ const Footer = () => (
   <footer>
     <div className="flex font-bold items-center justify-between leading-normal max-w-2xl mx-auto p-4 md:p-8 w-full">
       <p className="flex flex-wrap">
-        <span className="mr-6">Pink Slip Property © 2019</span>{' '}
+        <span className="mr-6">Pinkslip Property © 2019</span>{' '}
         <span>All rights reserved</span>
       </p>
       <p className="flex flex-wrap">
