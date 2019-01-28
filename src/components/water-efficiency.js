@@ -20,7 +20,7 @@ const WaterEfficiency = () => (
         </p>
         <p className="mb-4">
           <a
-            className="font-bold no-underline text-pink"
+            className="font-bold no-underline text-pink-dark"
             href="http://www.fairtrading.nsw.gov.au/ftw/Tenants_and_home_owners/Being_a_landlord/During_a_tenancy/Passing_on_water_charges.page"
           >
             Click here for more information on your responsibilities.

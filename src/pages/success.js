@@ -18,14 +18,14 @@ const Success = () => (
         <p className="text-grey-darkest">
           Please call{' '}
           <a
-            className="font-bold no-underline text-pink text-lg"
+            className="font-bold no-underline text-pink-dark text-lg"
             href="tel:0404222244"
           >
             0404 222 244
           </a>{' '}
           if you matter is urgent.
         </p>
-        <p className="font-bold no-underline text-pink text-lg">
+        <p className="font-bold no-underline text-pink-dark text-lg">
           Click here to return to the homepage.
         </p>
       </Link>
