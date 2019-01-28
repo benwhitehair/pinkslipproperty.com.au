@@ -2,8 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer className="p-4">
-    <div className="flex flex-wrap font-bold leading-normal justify-between max-w-2xl mx-auto md:p-8 text-center w-full">
-      <p className="hidden md:block m-0">Pinkslip Property © 2019</p>
+    <div className="flex flex-wrap font-bold items-center leading-normal justify-between max-w-2xl mx-auto text-center w-full">
       <p className="m-0 text-right md:text-left">
         <span className="mr-1">Website by</span>
         <a
@@ -13,7 +12,11 @@ const Footer = () => (
           Luke Bennett
         </a>
       </p>
-      <p className="hidden md:block m-0">All rights reserved</p>
+      <p className="hidden md:block m-0">
+        <div>Pinkslip Property © 2019</div>
+        <div>All rights reserved</div>
+      </p>
+      <p className="hidden md:block m-0">ABN: 45 114 128 951</p>
     </div>
 
     <a
