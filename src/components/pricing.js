@@ -5,7 +5,7 @@ import Indigo from '../images/check-indigo.svg';
 const Pricing = () => (
   <section id="pricing" className="bg-grey-lightest px-4 py-16">
     <div className="cards max-w-2xl mx-auto">
-      <div className="bg-white border mx-4 shadow text-center">
+      <div className="bg-white mx-4 shadow text-center">
         <div className="bg-pink-lightest p-4 text-pink-dark">
           <h3 className="font-condensed mb-4 text-4xl uppercase">
             Smoke Alarms
@@ -70,7 +70,7 @@ const Pricing = () => (
         </ul>
       </div>
 
-      <div className="bg-white border mx-4 shadow text-center">
+      <div className="bg-white mx-4 shadow text-center">
         <div className="bg-indigo-lightest p-4 text-indigo-dark">
           <h3 className="font-condensed mb-4 text-4xl uppercase">
             Water Efficiency
@@ -132,7 +132,7 @@ const Pricing = () => (
         </ul>
       </div>
 
-      <div className="bg-white border mx-4 shadow text-center">
+      <div className="bg-white mx-4 shadow text-center">
         <div className="bg-pink-lightest p-4 text-pink-dark">
           <h3 className="font-condensed mb-4 text-4xl uppercase">
             Basic Safety Check
