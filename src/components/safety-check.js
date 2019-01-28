@@ -4,7 +4,7 @@ import Image from '../images/safety-check.jpg';
 const SafetyCheck = () => (
   <section className="bg-grey-lightest">
     <div className="flex flex-wrap leading-normal max-w-2xl mx-auto py-16">
-      <div className="flex items-center px-4 w-full md:w-3/5">
+      <div className="flex items-center mb-8 md:m-0 px-4 w-full md:w-3/5">
         <img src={Image} alt="" />
       </div>
       <div className="px-4 w-full md:w-2/5">

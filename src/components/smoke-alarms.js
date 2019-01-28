@@ -4,7 +4,7 @@ import Image from '../images/smoke-alarms.png';
 const SmokeAlarms = () => (
   <section id="services" className="bg-white">
     <div className="flex flex-wrap leading-normal max-w-2xl mx-auto py-16">
-      <div className="px-4 w-full md:w-2/5">
+      <div className="mb-8 md:m-0 px-4 w-full md:w-2/5">
         <h3 className="font-condensed mb-4 text-3xl uppercase">Smoke alarms</h3>
         <p className="mb-4">
           With almost 50 house fires a day in Australia, it is simply not worth
