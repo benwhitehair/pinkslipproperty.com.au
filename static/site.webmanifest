@@ -1,0 +1,14 @@
+{
+    "name": "Pinkslip Property",
+    "short_name": "Pinkslip Property",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png?v=Kmn7JO7BvE",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fe7bac",
+    "background_color": "#fe7bac",
+    "display": "standalone"
+}
