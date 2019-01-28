@@ -11,15 +11,13 @@ const Hero = () => (
       </p>
     </div>
     <div className="bg-white flex flex-wrap font-bold items-center justify-center leading-loose mx-auto px-4 py-3 text-center text-sm md:text-xl uppercase">
-      <div>
-        <span className="mr-2 text-pink-dark">24/7</span>
-        <span className="mr-2">emergency number</span>
-        <span className="mr-4 md:mr-16">
-          <a className="no-underline text-pink-dark" href="tel:0404222244">
-            0404&nbsp;222&nbsp;244
-          </a>
-        </span>
-      </div>
+      <span className="mr-2 text-pink-dark">24/7</span>
+      <span className="mr-2">emergency number</span>
+      <span className="mr-4 md:mr-16">
+        <a className="no-underline text-pink-dark" href="tel:0404222244">
+          0404&nbsp;222&nbsp;244
+        </a>
+      </span>
       <div className="normal-case">
         <a className="no-underline text-grey-darkest" href="#contact">
           <div className="flex items-center leading-none">
