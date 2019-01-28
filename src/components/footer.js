@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => (
   <footer className="p-4">
     <div className="flex flex-wrap font-bold items-center leading-normal justify-between max-w-2xl mx-auto text-center w-full">
-      <p className="m-0 text-right md:text-left">
+      <p className="m-0 text-center md:text-left w-full md:w-auto">
         <span className="mr-1">Website by</span>
         <a
           className="no-underline text-pink-dark"
