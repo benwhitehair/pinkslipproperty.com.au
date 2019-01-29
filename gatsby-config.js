@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Pinkslip Property`,
     description: `Domestic property and maintenance services`,
+    siteUrl: `https://www.pinkslipproperty.com.au`,
     author: `@luke_bennett_`,
   },
   plugins: [
@@ -14,6 +15,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     {
