@@ -1,45 +1,16 @@
-<div align="center">
-  <img src="https://image.ibb.co/cJjPN7/gatsby_tailwind.png" alt="Gatsby and Tailwind CSS logos">
-</div>
+# Pinkslip Property
 
-<div align="center">
-  <strong>A <a href="https://www.gatsbyjs.org/">Gatsby</a> starter styled using <a href="https://tailwindcss.com/">Tailwind</a>, a utility-first CSS framework.</strong><br />
-  Uses <a href="https://www.purgecss.com/">Purgecss</a> to remove unused CSS.<br />
-  Illustrations by <a href="https://undraw.co/">unDraw</a>.
-  <br />
-  <br />
-</div>
-  
-![alt text](https://image.ibb.co/jv6FC7/gatsby_starter_tailwind.png "Screenshot of Gatsby Starter Tailwind homepage")
-  
-<p align="center">View demo <a href="https://quizzical-mcclintock-0226ac.netlify.com/">here</a>.</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2209d4a9-8c37-4a47-aab1-dcb6799ba575/deploy-status)](https://app.netlify.com/sites/pinkslip-property/deploys)
 
+This is the code for the [Pinkslip Property](https://www.pinkslipproperty.com.au) website.
 
-## Getting started
+It's built using the following technologies:
 
-Install Gatsby CLI:
-```sh
-npm i --global gatsby-cli
-```
+- Static site generator: [Gatsby](https://gatsbyjs.org/)
+- Base template: [gatsby-starter-tailwind](https://github.com/taylorbryant/gatsby-starter-tailwind)
+- CSS framework: [Tailwind](https://tailwindcss.com)
+- Hosting: [Netlify](https://www.netlify.com)
 
-Create new Gatsby project using this starter:
-```sh
-gatsby new my-new-website https://github.com/taylorbryant/gatsby-starter-tailwind
-```
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://https://github.com/benwhitehair/pinkslipproperty.com.au)
 
-Build stylesheet from Tailwind config and run project locally:
-```sh
-cd my-new-website
-npm run develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/gatsby-starter-tailwind)
-
-## Resources
-* [Gatsby documentation](https://www.gatsbyjs.org/docs/)
-* [Tailwind documentation](https://tailwindcss.com/docs/what-is-tailwind/)
-
-## License
-[MIT](https://github.com/taylorbryant/gatsby-starter-tailwind/blob/master/LICENSE.md)
+[**Made by Luke Bennett**](https://lukebennett.com.au)
