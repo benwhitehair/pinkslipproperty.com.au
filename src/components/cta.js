@@ -2,7 +2,7 @@ import React from 'react';
 
 const CTA = () => (
   <section id="about" className="bg-grey-lightest leading-normal px-8 py-16">
-    <div className="max-w-lg mx-auto text-lg">
+    <div className="max-w-lg mx-auto md:mt-16 text-lg">
       <h1 className="font-condensed leading-none mb-6 text-5xl uppercase">
         Does your property have a pink slip?
       </h1>

@@ -8,7 +8,7 @@ const Contact = () => (
     id="contact"
     className="background bg-pink px-4 py-16 text-indigo-darkest"
   >
-    <div className="flex flex-wrap max-w-2xl mx-auto">
+    <div className="flex flex-wrap max-w-2xl  md:mt-16 mx-auto">
       <div className="flex flex-col flex-wrap items-start leading-normal p-4 md:w-1/2">
         <h2 className="font-condensed mb-4 text-4xl uppercase">Contact</h2>
         <p className="font-bold text-lg">
