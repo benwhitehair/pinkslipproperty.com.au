@@ -17,7 +17,27 @@ import Contact from '../components/contact';
 
 const IndexPage = () => (
   <Layout>
-    <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} />
+    <SEO
+      keywords={[
+        'pinkslip property',
+        'plumbers port macquarie nsw',
+        'plumber in port macquarie',
+        'affordable plumbing port macquarie',
+        'plumbing jobs port macquarie',
+        'emergency plumber port macquarie',
+        'gas plumber port macquarie',
+        'roof plumber port macquarie',
+        'plumbing supplies port macquarie',
+        'plumbing supplies port macquarie nsw',
+        'b j crowley plumbing port macquarie',
+        'laser plumbing port macquarie',
+        'wallis plumbing port macquarie',
+        'hanna plumbing port macquarie',
+        't & t plumbing port macquarie',
+        'reece plumbing port macquarie',
+        'reece plumbing port macquarie nsw',
+      ]}
+    />
     <Hero />
     <Cards />
     <CTA />
