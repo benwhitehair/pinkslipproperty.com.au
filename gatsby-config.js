@@ -21,7 +21,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/success`],
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     {
