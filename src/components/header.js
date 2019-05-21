@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import Logo from '../images/favicon.png';
 import '../css/hover-effect.css';
 
-const handleClick = ev => {
-  ev.preventDefault();
+const handleClick = e => {
+  e.preventDefault();
   const element = document.getElementById('nav');
   element.classList.toggle('block');
   element.classList.toggle('hidden');
@@ -62,6 +62,7 @@ const Header = ({ siteTitle }) => (
         <button
           className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-grey-darkest"
           onClick={handleClick}
+          type="button"
         >
           <svg
             className="fill-current h-4 w-4"

@@ -59,7 +59,7 @@ const Pricing = () => (
           </li>
 
           <li className="flex items-start p-2">
-            <span className="w-full" className="flex-no-shrink">
+            <span className="flex-no-shrink w-full">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             <span>

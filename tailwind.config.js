@@ -24,7 +24,7 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
-let defaultConfig = require('tailwindcss/defaultConfig')();
+// let defaultConfig = require('tailwindcss/defaultConfig')();
 
 /*
 |-------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ let defaultConfig = require('tailwindcss/defaultConfig')();
 |
 */
 
-let colors = {
+const colors = {
   transparent: 'transparent',
 
   black: '#22292f',
@@ -142,7 +142,7 @@ module.exports = {
   |
   */
 
-  colors: colors,
+  colors,
 
   /*
   |-----------------------------------------------------------------------------
@@ -939,12 +939,12 @@ module.exports = {
   |
   */
 
-  plugins: [
-    require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
-    }),
-  ],
+  // plugins: [
+  //   require('tailwindcss/plugins/container')({
+  //     // center: true,
+  //     // padding: '1rem',
+  //   }),
+  // ],
 
   /*
   |-----------------------------------------------------------------------------
