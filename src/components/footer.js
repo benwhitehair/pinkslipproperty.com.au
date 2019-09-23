@@ -8,7 +8,8 @@ const Footer = () => (
         <a
           className="no-underline text-pink-dark"
           href="https://lukebennett.com.au"
-          rel="nofollow"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Luke Bennett
         </a>
