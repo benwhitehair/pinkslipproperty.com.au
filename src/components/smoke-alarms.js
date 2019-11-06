@@ -32,7 +32,7 @@ const SmokeAlarms = () => (
         </p>
       </div>
       <div className="flex items-center px-4 w-full md:w-3/5">
-        <img src={Image} alt="" />
+        <img src={Image} alt="" loading="lazy" />
       </div>
     </div>
   </section>

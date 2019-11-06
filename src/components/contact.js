@@ -24,7 +24,7 @@ const Contact = () => (
           </a>
         </p>
         <p className="hidden md:block md:self-end md:mb-16 mt-auto pb-1">
-          <img src={Image} alt="" />
+          <img src={Image} alt="" loading="lazy" />
         </p>
       </div>
 
