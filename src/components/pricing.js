@@ -15,55 +15,55 @@ const Pricing = () => (
             <div className="text-lg">per year</div>
           </h4>
         </div>
-        <ul className="list-reset px-2 py-8 text-grey-darkest text-left">
-          <li className="flex items-start p-2">
+        <ul className=" leading-normal list-reset px-2 py-8 text-grey-darkest text-left">
+          <li className="flex items-start px-2">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             <span>Alarm replacement and installation</span>
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             <span>Ensure correct alarms are in place</span>
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             <span>Ensure alarms are properly installed</span>
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             <span>Ensure correct location of alarms</span>
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             <span>Check alarm expiry date</span>
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             <span>Artificial test procedure</span>
           </li>
 
-          <li className="flex items-start p-2">
-            <span className="flex-no-shrink w-full">
+          <li className="flex items-start px-2 pt-3">
+            <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             <span>
-              Limited to two alarms as required per property – thereafter $39
+              Limited to two alarms as required per property — thereafter $39
               per unit
             </span>
           </li>
@@ -80,50 +80,50 @@ const Pricing = () => (
             <div className="text-xl">per year</div>
           </h4>
         </div>
-        <ul className="list-reset px-2 py-8 text-grey-darkest text-left">
-          <li className="flex items-start p-2">
+        <ul className="leading-normal list-reset px-2 py-8 text-grey-darkest text-left">
+          <li className="flex items-start px-2">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Indigo} alt="" />
             </span>
             A PSP licensed plumber
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Indigo} alt="" />
             </span>
             Check for leaking taps
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Indigo} alt="" />
             </span>
             Check water meters
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Indigo} alt="" />
             </span>
             Water flow rate
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Indigo} alt="" />
             </span>
             Check external fixtures
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Indigo} alt="" />
             </span>
             Supply and installation of water saving devices
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Indigo} alt="" />
             </span>
@@ -142,22 +142,22 @@ const Pricing = () => (
             <div className="text-xl">per year</div>
           </h4>
         </div>
-        <ul className="list-reset px-2 py-8 text-grey-darkest text-left">
-          <li className="flex items-start p-2">
+        <ul className="leading-normal list-reset px-2 py-8 text-grey-darkest text-left">
+          <li className="flex items-start px-2">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             Check Blind Cords
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
             Safety Switches
           </li>
 
-          <li className="flex items-start p-2">
+          <li className="flex items-start px-2 pt-3">
             <span className="flex-no-shrink">
               <img className="h-6 mr-2 w-6" src={Pink} alt="" />
             </span>
