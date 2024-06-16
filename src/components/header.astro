@@ -38,9 +38,10 @@ const siteNavigation = Object.entries(siteConfig.siteNavigation).map(
 			class="my-auto flex shrink-0 items-center font-sans text-xl font-bold tracking-tight no-underline"
 			href="/"
 			><Image
-				class="h-12 w-auto shrink-0 object-contain"
-				src={headerLogo}
 				alt=""
+				class="h-12 w-auto shrink-0 object-contain"
+				densities={[1.5, 2]}
+				src={headerLogo}
 			/>
 			{siteConfig.title}
 		</a>

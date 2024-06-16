@@ -29,7 +29,13 @@ const safetyFeatures = [
 		{
 			safetyFeatures.map((feature) => (
 				<div class="min-w-80 flex-1">
-					<Image class="mx-auto size-32" src={feature.image} alt="" />
+					<Image
+						alt=""
+						class="mx-auto size-32"
+						densities={[1.5, 2]}
+						src={feature.image}
+						width={128}
+					/>
 					<h3 class="mt-4 text-center text-2xl font-bold">{feature.title}</h3>
 					<p class="mt-4 text-center">{feature.description}</p>
 				</div>

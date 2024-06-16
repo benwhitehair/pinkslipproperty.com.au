@@ -8,6 +8,9 @@ import { siteConfig } from './src/lib/site-config';
 // https://astro.build/config
 export default defineConfig({
 	site: siteConfig.baseUrl,
+	server: {
+		host: true,
+	},
 	integrations: [markdoc(), sitemap(), tailwind()],
 	output: 'hybrid',
 	adapter: netlify({

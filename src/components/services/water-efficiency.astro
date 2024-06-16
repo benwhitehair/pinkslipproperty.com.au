@@ -7,10 +7,12 @@ import { packs } from '../../lib/packs';
 
 <SideBySideContent imagePosition="left">
 	<Image
-		class="h-full w-full object-cover"
-		src={waterEfficiency}
 		alt=""
+		class="h-full w-full object-cover"
+		sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
 		slot="left"
+		src={waterEfficiency}
+		widths={[240, 540, 720]}
 	/>
 	<div slot="right" class:list={[packs.innerPadding, 'prose']}>
 		<h2 class="text-heading-2">Water efficiency</h2>

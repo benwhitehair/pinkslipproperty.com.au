@@ -20,9 +20,11 @@ import { packs } from '../../lib/packs';
 		</p>
 	</div>
 	<Image
-		class="h-full w-full object-cover"
-		src={priorityCare}
 		alt=""
+		class="h-full w-full object-cover"
+		sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
 		slot="right"
+		src={priorityCare}
+		widths={[240, 540, 720]}
 	/>
 </SideBySideContent>
