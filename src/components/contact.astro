@@ -73,7 +73,7 @@ const contactInfo = [
 			<form
 				id={formId}
 				action="/success/"
-				class="flex min-w-[30rem] flex-1 flex-col gap-6"
+				class="flex flex-1 flex-col gap-6 sm:min-w-[30rem]"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
 				method="POST"
@@ -132,7 +132,7 @@ const contactInfo = [
 				</Field>
 			</form>
 			<div class="flex w-full justify-end">
-				<Button type="submit"> Send</Button>
+				<Button form={formId} type="submit"> Send</Button>
 			</div>
 		</div>
 	</div>
