@@ -1,0 +1,39 @@
+---
+import { packs } from '../lib/packs';
+
+type Props = {
+	imagePosition: 'left' | 'right';
+};
+
+const { imagePosition }: Props = Astro.props;
+
+const imageClasses = 'md:col-span-3';
+
+const copyClasses = 'md:col-span-2';
+
+const layoutClasses = {
+	left: {
+		leftCol: imageClasses,
+		rightCol: copyClasses,
+		bgClass: 'bg-indigo_2',
+	},
+	right: {
+		leftCol: copyClasses,
+		rightCol: imageClasses,
+		bgClass: '',
+	},
+};
+
+const columnClasses = layoutClasses[imagePosition];
+---
+
+<div class:list={[columnClasses.bgClass, 'py-24']}>
+	<div class:list={[packs.containerOuter, 'grid gap-8 md:grid-cols-5']}>
+		<div class={columnClasses.leftCol}>
+			<slot name="left" />
+		</div>
+		<div class={columnClasses.rightCol}>
+			<slot name="right" />
+		</div>
+	</div>
+</div>

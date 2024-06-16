@@ -1,0 +1,29 @@
+---
+import CheckIndigo from './icons/check-indigo.astro';
+import CheckPink from './icons/check-pink.astro';
+
+type Props = {
+	isEven: boolean;
+	items: string[];
+};
+
+const { isEven, items } = Astro.props;
+
+const Icon = isEven ? CheckPink : CheckIndigo;
+---
+
+<ul class="flex flex-col gap-5">
+	{
+		items.map((item) => (
+			<li class="flex items-start gap-3">
+				<span aria-hidden="true" class="flex items-center">
+					&#8203; {/* Zero width space */}
+					<span class="flex h-0 items-center">
+						<Icon class="size-6" />
+					</span>
+				</span>
+				<span>{item}</span>
+			</li>
+		))
+	}
+</ul>

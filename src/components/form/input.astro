@@ -1,0 +1,22 @@
+---
+import { formControlClasses } from './classes';
+
+type Props = astroHTML.JSX.DefinedIntrinsicElements['input'] & {
+	id: string;
+};
+const props = Astro.props;
+const {
+	id,
+	type = 'text',
+	class: className,
+	'class:list': classList,
+	...consumerProps
+} = props;
+---
+
+<input
+	{...consumerProps}
+	class:list={[formControlClasses, className, classList]}
+	id={id}
+	type={type}
+/>

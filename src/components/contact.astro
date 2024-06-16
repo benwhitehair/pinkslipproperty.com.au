@@ -1,0 +1,139 @@
+---
+import { Image } from 'astro:assets';
+import background from '../assets/background.png';
+import contact from '../assets/contact.png';
+import Field from '../components/form/field.astro';
+import Input from '../components/form/input.astro';
+import Textarea from '../components/form/textarea.astro';
+import { packs } from '../lib/packs';
+import { siteConfig } from '../lib/site-config';
+import Button from './button/button.astro';
+
+const formId = 'contact_form';
+
+const contactInfo = [
+	{
+		label: 'Email',
+		value: siteConfig.email,
+		href: `mailto:${siteConfig.email}`,
+	},
+	{
+		label: 'Phone',
+		value: siteConfig.phone,
+		href: `tel:${siteConfig.phone}`,
+	},
+];
+---
+
+<div
+	id={siteConfig.siteNavigation.Contact.href.replace('#', '')}
+	class="relative grid"
+>
+	<Image
+		src={background}
+		alt=""
+		class="col-start-1 row-start-1 h-full w-full object-cover"
+	/>
+	<div
+		class:list={[
+			packs.innerPadding,
+			'relative col-start-1 row-start-1 flex items-center justify-center bg-pink_12/50 py-24',
+		]}
+	>
+		<div
+			class:list={[
+				packs.containerOuter,
+				'flex flex-wrap justify-center gap-12 text-xl text-white',
+			]}
+		>
+			<div class="flex flex-1 flex-col gap-8 whitespace-nowrap">
+				<div class="flex-1">
+					<h2
+						class="font-display text-4xl font-semibold uppercase leading-normal"
+					>
+						Contact
+					</h2>
+					<dl>
+						{
+							contactInfo.map((info) => (
+								<div>
+									<dt class="inline-block">{info.label}:</dt>
+									<dd class="inline-block">
+										<a class="font-semibold underline" href={info.href}>
+											{info.value}
+										</a>
+									</dd>
+								</div>
+							))
+						}
+					</dl>
+				</div>
+				<Image src={contact} alt="" class="object-cover" />
+			</div>
+			<form
+				id={formId}
+				action="/success/"
+				class="flex min-w-[30rem] flex-1 flex-col gap-6"
+				data-netlify="true"
+				data-netlify-honeypot="bot-field"
+				method="POST"
+				name="contact"
+			>
+				{
+					/**
+					 * Honeypot:
+					 * @see https://docs.netlify.com/forms/spam-filters/
+					 */
+				}
+				<p class="hidden">
+					<label>
+						Don’t fill this out if you’re human: <input name="bot-field" />
+					</label>
+				</p>
+
+				{/** Name */}
+				<Field for="name" label="Full name:">
+					<Input autocomplete="name" id="name" name="name" required />
+				</Field>
+
+				{/** Phone */}
+				<Field for="phone-number" label="Phone number:">
+					<Input
+						autocomplete="tel"
+						id="phone-number"
+						name="phone-number"
+						required
+						type="tel"
+					/>
+				</Field>
+
+				{/** Email */}
+				<Field for="email-address" label="Email address">
+					<Input
+						autocomplete="email"
+						id="email-address"
+						name="email-address"
+						placeholder="your.name@example.com"
+						required
+						type="email"
+					/>
+
+					{/** Message */}
+					<Field for="message" label="Message">
+						<Textarea
+							class="h-24"
+							id="message"
+							name="message"
+							placeholder="Optional — please leave blank unless you have a good reason"
+							rows={3}
+							spellcheck
+						/>
+					</Field>
+				</Field>
+			</form>
+			<div class="flex w-full justify-end">
+				<Button type="submit"> Send</Button>
+			</div>
+		</div>
+	</div>
+</div>

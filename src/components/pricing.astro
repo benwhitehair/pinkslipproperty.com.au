@@ -1,0 +1,78 @@
+---
+import { packs } from '../lib/packs';
+import { siteConfig } from '../lib/site-config';
+import StyledList from './styled-list.astro';
+
+const services = [
+	{
+		title: 'Smoke Alarms',
+		annualPrice: '$99',
+		features: [
+			'Alarm replacement and installation',
+			'Ensure correct alarms are in place',
+			'Ensure alarms are properly installed',
+			'Ensure correct location of alarms',
+			'Check alarm expiry date',
+			'Artificial test procedure',
+			'Limited to two alarms as required per property — thereafter $39 per unit',
+		],
+	},
+	{
+		title: 'Water Efficiency',
+		annualPrice: '$89',
+		features: [
+			'A PSP licensed plumber',
+			'Check for leaking taps',
+			'Check water meters',
+			'Water flow rate',
+			'Check external fixtures',
+			'Supply and installation of water saving devices',
+			'Water efficiency certificate',
+		],
+	},
+	{
+		title: 'Basic Safety Check',
+		annualPrice: '$69',
+		features: [
+			'Check Blind Cords',
+			'Safety Switches',
+			'Compliance with DFT requirements',
+		],
+	},
+];
+---
+
+<article
+	class:list={[packs.innerPadding, 'bg-indigo_2 py-24']}
+	id={siteConfig.siteNavigation.Pricing.href.replace('#', '')}
+>
+	<ul class:list={[packs.containerOuter, 'mx-auto grid gap-8 lg:grid-cols-3']}>
+		{
+			services.map((services, index) => {
+				const isEven = index % 2 === 0;
+				return (
+					<li class="mx-auto w-full max-w-md bg-white shadow-md">
+						<div
+							class:list={[
+								'flex flex-col gap-4 p-4 text-center',
+								isEven
+									? 'bg-pink_4 text-pink_11'
+									: 'bg-indigo_4 text-indigo_11',
+							]}
+						>
+							<h2 class="text-heading-2 font-bold">{services.title}</h2>
+							<p class="text-2xl font-bold">
+								<span class="text-heading-1">{services.annualPrice}</span>
+								<br />
+								per year
+							</p>
+						</div>
+						<div class="px-4 pb-12 pt-6">
+							<StyledList isEven={isEven} items={services.features} />
+						</div>
+					</li>
+				);
+			})
+		}
+	</ul>
+</article>

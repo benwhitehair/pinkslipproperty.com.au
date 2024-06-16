@@ -1,0 +1,33 @@
+---
+import SideBySideContent from '../side-by-side-content.astro';
+import waterEfficiency from '../../assets/water-efficiency.png';
+import { Image } from 'astro:assets';
+import { packs } from '../../lib/packs';
+---
+
+<SideBySideContent imagePosition="left">
+	<Image
+		class="h-full w-full object-cover"
+		src={waterEfficiency}
+		alt=""
+		slot="left"
+	/>
+	<div slot="right" class:list={[packs.innerPadding, 'prose']}>
+		<h2 class="text-heading-2">Water efficiency</h2>
+		<p>
+			Reducing our water usage is good for everyone. PSP will ensure that your
+			property is individually metered and meets the required water efficiency
+			standards by checking all taps, toilets, and showerheads for leaks and
+			appropriate flow rates. PSP will also install and supply any aerators,
+			regulators or seals that require replacing or upgrading.
+		</p>
+		<p>
+			<a
+				href="https://water.dpie.nsw.gov.au/our-work/projects-and-programs/water-efficiency"
+			>
+				Click here for more information on your responsibilities.
+			</a>
+		</p>
+		<p>PSP issues a certificate of compliance on every job.</p>
+	</div>
+</SideBySideContent>

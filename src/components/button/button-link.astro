@@ -1,0 +1,13 @@
+---
+import { buttonClasses } from './classes';
+
+type Props = {
+	href: string;
+};
+
+const { href } = Astro.props;
+---
+
+<a class={buttonClasses} href={href}>
+	<slot />
+</a>

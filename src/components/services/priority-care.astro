@@ -1,0 +1,28 @@
+---
+import SideBySideContent from '../side-by-side-content.astro';
+import priorityCare from '../../assets/priority-care.png';
+import { Image } from 'astro:assets';
+import { packs } from '../../lib/packs';
+---
+
+<SideBySideContent imagePosition="right">
+	<div slot="left" class:list={[packs.innerPadding, 'prose']}>
+		<h2 class="text-heading-2">Pinkslip Priority Care</h2>
+		<p>
+			Pinkslip Property service your property as if it were our own – we invest
+			our knowledge into your property.
+		</p>
+		<p>
+			We log the location of all the key service fixtures on your property so in
+			case of an emergency we can quickly and efficiently respond to any trade
+			issues you may have. Consequently there is no time wasted looking for
+			electrical boxes and water meters – we get straight to work.
+		</p>
+	</div>
+	<Image
+		class="h-full w-full object-cover"
+		src={priorityCare}
+		alt=""
+		slot="right"
+	/>
+</SideBySideContent>

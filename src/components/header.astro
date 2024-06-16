@@ -1,0 +1,66 @@
+---
+import { siteConfig } from '../lib/site-config';
+import { Image } from 'astro:assets';
+import headerLogo from '../assets/logo-square.png';
+import { packs } from '../lib/packs';
+import PhoneIcon from '../components/icons/phone.astro';
+import EmailIcon from '../components/icons/email.astro';
+
+const siteNavigation = Object.entries(siteConfig.siteNavigation).map(
+	([key, value]) => {
+		return {
+			label: key,
+			href: value.href,
+		};
+	},
+);
+---
+
+<header class:list={[packs.innerPadding, 'bg-gray_6 py-1 text-white']}>
+	<div class:list={[packs.containerOuter, 'flex items-center justify-between']}>
+		<a class="flex items-center gap-2 hover:text-pink_8" href="#">
+			<PhoneIcon class="size-4 text-pink_8" />
+			{siteConfig.phone}
+		</a>
+		<a class="flex items-center gap-2 hover:text-pink_8" href="#">
+			<EmailIcon class="size-4 text-pink_8" />{siteConfig.email}
+		</a>
+	</div>
+</header>
+<nav
+	class:list={[
+		packs.innerPadding,
+		'sticky top-0 z-10 flex h-[--header-height] items-center bg-white shadow-md',
+	]}
+>
+	<div class:list={[packs.containerOuter, 'flex justify-between']}>
+		<a
+			class="my-auto flex shrink-0 items-center font-sans text-xl font-bold tracking-tight no-underline"
+			href="/"
+			><Image
+				class="h-12 w-auto shrink-0 object-contain"
+				src={headerLogo}
+				alt=""
+			/>
+			{siteConfig.title}
+		</a>
+		<ul class="hidden flex-1 justify-end sm:flex">
+			{
+				siteNavigation.map((navItem) => (
+					<li class="inline">
+						<a
+							class:list={[
+								'relative inline-flex h-[--header-height] items-center overflow-hidden px-4 font-display text-lg font-semibold uppercase',
+								'before:absolute before:left-0 before:top-0 before:h-1 before:w-full before:-translate-x-full before:bg-pink_9 before:transition before:duration-300 before:ease-out',
+								'hover:before:translate-x-0 focus:before:translate-x-0 active:before:translate-x-0',
+							]}
+							href={navItem.href}
+						>
+							{navItem.label}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</nav>

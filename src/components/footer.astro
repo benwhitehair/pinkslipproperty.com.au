@@ -1,0 +1,35 @@
+---
+import { packs } from '../lib/packs';
+import { siteConfig } from '../lib/site-config';
+---
+
+<footer
+	class:list={[packs.innerPadding, 'flex flex-1 items-end justify-center']}
+>
+	<div
+		class:list={[
+			packs.containerOuter,
+			'flex flex-wrap items-center justify-center gap-8 text-pretty px-4 py-12 text-center font-bold sm:px-8',
+		]}
+	>
+		<div class="flex-1">
+			Website by <a
+				class="inline-block font-bold text-pink_9"
+				href="https://www.lukebennett.com.au">Luke Bennett</a
+			>
+		</div>
+
+		<div class="flex-1">
+			<span class="inline-block">{siteConfig.title}</span>
+			<span class="inline-block">
+				&copy {new Date().getFullYear()}
+			</span>
+			<br />
+			All rights reserved
+		</div>
+
+		<div class="flex-1">
+			ABN: <span class="inline-block">{siteConfig.abnNumber}</span>
+		</div>
+	</div>
+</footer>

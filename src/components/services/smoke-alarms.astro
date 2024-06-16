@@ -1,0 +1,36 @@
+---
+import SideBySideContent from '../side-by-side-content.astro';
+import smokeAlarms from '../../assets/smoke-alarms.png';
+import { Image } from 'astro:assets';
+import { packs } from '../../lib/packs';
+---
+
+<SideBySideContent imagePosition="right">
+	<div slot="left" class:list={[packs.innerPadding, 'prose']}>
+		<h2 class="text-heading-2">Smoke alarms</h2>
+		<p>
+			With almost 50 house fires a day in Australia, it is simply not worth the
+			risk of ignoring fire safety. PSP perform a full review of all smoke
+			detectors in your property. This includes: Changing batteries, checking
+			expiry dates and ensuring the correct type, quantity and placement of
+			smoke alarms in your property.
+		</p>
+		<p>
+			PSP also conduct an artificial smoke test on all alarms so you know that
+			they will actually work in a fire. Full package includes up to 2 new smoke
+			alarms as required, each with a 5 year warranty and 10 year certificate.
+		</p>
+		<p>PSP issues a certificate of compliance on every job.</p>
+		<p>
+			<a href="https://www.fire.nsw.gov.au/page.php?id=80"
+				>Click here for more information on your fire alarm requirements.</a
+			>
+		</p>
+	</div>
+	<Image
+		class="h-full w-full object-cover"
+		src={smokeAlarms}
+		alt=""
+		slot="right"
+	/>
+</SideBySideContent>

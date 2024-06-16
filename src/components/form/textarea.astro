@@ -1,0 +1,19 @@
+---
+import { formControlClasses } from './classes';
+
+type Props = astroHTML.JSX.DefinedIntrinsicElements['textarea'] & {
+	id: string;
+};
+const props = Astro.props;
+const {
+	id,
+	class: className,
+	'class:list': classList,
+	...consumerProps
+} = props;
+---
+
+<textarea
+	{...consumerProps}
+	class:list={[formControlClasses, className, classList]}
+	id={id}></textarea>

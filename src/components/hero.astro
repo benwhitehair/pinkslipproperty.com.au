@@ -1,0 +1,50 @@
+---
+import { Image } from 'astro:assets';
+import beach from '../assets/beach.jpg';
+import { siteConfig } from '../lib/site-config';
+import CheckPink from './icons/check-pink.astro';
+import { packs } from '../lib/packs';
+---
+
+<Image
+	src={beach}
+	alt=""
+	class="sticky top-0 col-start-1 row-start-1 h-full max-h-[35rem] w-full object-cover"
+/>
+<div
+	class:list={[
+		packs.innerPadding,
+		'relative col-start-1 row-start-1 flex items-center justify-center bg-pink_12/50 py-24',
+	]}
+>
+	<div class="flex flex-col gap-12 text-center font-display">
+		<div
+			class:list={[
+				packs.containerInner,
+				'text-4xl font-semibold uppercase leading-normal text-white',
+			]}
+		>
+			<h1>Property pink slips just $199</h1>
+			<p>
+				Your complete safety net package to ensure your investment is protected
+			</p>
+		</div>
+		<div
+			class="flex grow-0 items-center justify-between gap-6 self-center bg-white p-4 md:gap-12 md:whitespace-nowrap md:text-lg"
+		>
+			<div class="flex items-center gap-2 uppercase">
+				<span class="text-pink_9">24/7</span> Emergency number
+				<a class="text-pink_9" href={`tel:${siteConfig.phone}`}>
+					{siteConfig.phone}
+				</a>
+			</div>
+			<a
+				href={siteConfig.siteNavigation.Contact.href}
+				class="flex items-center gap-2"
+			>
+				Make an appointment
+				<CheckPink class="size-6" />
+			</a>
+		</div>
+	</div>
+</div>

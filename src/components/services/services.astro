@@ -1,0 +1,14 @@
+---
+import { siteConfig } from '../../lib/site-config';
+import BasicSafetyCheck from './basic-safety-check.astro';
+import PriorityCare from './priority-care.astro';
+import SmokeAlarms from './smoke-alarms.astro';
+import WaterEfficiency from './water-efficiency.astro';
+---
+
+<article id={siteConfig.siteNavigation.Services.href.replace('#', '')}>
+	<SmokeAlarms />
+	<WaterEfficiency />
+	<PriorityCare />
+	<BasicSafetyCheck />
+</article>

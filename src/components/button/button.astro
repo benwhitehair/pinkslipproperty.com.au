@@ -1,0 +1,11 @@
+---
+import { buttonClasses } from './classes';
+
+type Props = astroHTML.JSX.ButtonHTMLAttributes;
+
+const { type = 'button', ...props } = Astro.props;
+---
+
+<button class={buttonClasses} type={type} {...props}>
+	<slot />
+</button>

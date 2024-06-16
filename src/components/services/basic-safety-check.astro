@@ -1,0 +1,39 @@
+---
+import SideBySideContent from '../side-by-side-content.astro';
+import safetyCheck from '../../assets/safety-check.jpg';
+import { Image } from 'astro:assets';
+import { packs } from '../../lib/packs';
+---
+
+<SideBySideContent imagePosition="left">
+	<Image
+		class="h-full w-full object-cover"
+		src={safetyCheck}
+		alt=""
+		slot="left"
+	/>
+	<div slot="right" class:list={[packs.innerPadding, 'prose']}>
+		<h2 class="text-heading-2">Basic safety check</h2>
+		<p>
+			Our Basic Safety Check can be added to any of our services – we take a
+			little more of our time to check some key safety factors of your asset.
+		</p>
+		<p>
+			Our aim is to ensure the safety of your tenants and their families. We
+			check blind cords and electrical safety switches for safety in reference
+			to NSW legislation and general safety issues. Any concerns or compliance
+			issues will be recorded and communicated with the owners and/or managing
+			agents.
+		</p>
+		<p>
+			If required, our technicians will provide a costing to carry out any works
+			necessary.
+		</p>
+		<p>PSP issues a certificate of compliance on every job.</p>
+		<p>
+			<a href="https://www.nsw.gov.au/housing-and-construction/safety-home">
+				Click here for more information on basic household safety.
+			</a>
+		</p>
+	</div>
+</SideBySideContent>

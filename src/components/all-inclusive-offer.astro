@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import background from '../assets/background.png';
+import { packs } from '../lib/packs';
+---
+
+<div class="relative grid">
+	<Image
+		src={background}
+		alt=""
+		class="sticky top-0 col-start-1 row-start-1 h-full max-h-[35rem] w-full"
+	/>
+	<div
+		class:list={[
+			packs.innerPadding,
+			'relative col-start-1 row-start-1 flex items-center justify-center bg-pink_12/50 py-24',
+		]}
+	>
+		<div
+			class:list={[packs.containerOuter, 'flex flex-col gap-12 text-center']}
+		>
+			<div class="text-xl text-white">
+				<h2
+					class="font-display text-4xl font-semibold uppercase leading-normal"
+				>
+					Combine all our checks for the all inclusive total of <span>$199</span
+					>
+				</h2>
+				<p>
+					Also includes 2 x alarms (if required) featuring a 5 year warranty and
+					10 year certificate
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

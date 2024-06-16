@@ -1,0 +1,39 @@
+---
+import { packs } from '../lib/packs';
+import fire from '../assets/card-fire.png';
+import water from '../assets/card-water.png';
+import safety from '../assets/card-safety.png';
+import { Image } from 'astro:assets';
+
+const safetyFeatures = [
+	{
+		image: fire,
+		title: 'Smoke alarms',
+		description: 'Keep your smoke alarms certified and up to date',
+	},
+	{
+		image: water,
+		title: 'Water efficiency',
+		description: 'Ensure your property is metered and compliant',
+	},
+	{
+		image: safety,
+		title: 'Basic safety check',
+		description: 'Making safe blind cords and safety switches',
+	},
+];
+---
+
+<article class:list={[packs.innerPadding, 'bg-white py-24']}>
+	<div class:list={[packs.containerOuter, 'grid gap-24 lg:grid-cols-3']}>
+		{
+			safetyFeatures.map((feature) => (
+				<div class="min-w-80 flex-1">
+					<Image class="mx-auto size-32" src={feature.image} alt="" />
+					<h3 class="mt-4 text-center text-2xl font-bold">{feature.title}</h3>
+					<p class="mt-4 text-center">{feature.description}</p>
+				</div>
+			))
+		}
+	</div>
+</article>
