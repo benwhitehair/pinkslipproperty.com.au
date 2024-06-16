@@ -22,7 +22,7 @@ import { packs } from '../lib/packs';
 		<div
 			class:list={[
 				packs.containerInner,
-				'text-4xl font-semibold uppercase leading-normal text-white',
+				'text-balance text-4xl font-semibold uppercase leading-normal text-white [text-shadow:0px_0px_4px_rgba(0,_0,_0,_0.5)]',
 			]}
 		>
 			<h1>Property pink slips just $199</h1>
@@ -31,17 +31,20 @@ import { packs } from '../lib/packs';
 			</p>
 		</div>
 		<div
-			class="flex grow-0 items-center justify-between gap-6 self-center bg-white p-4 md:gap-12 md:whitespace-nowrap md:text-lg"
+			class="flex grow-0 flex-wrap items-center justify-between gap-6 self-center bg-white p-4 text-center text-sm md:gap-12 md:whitespace-nowrap md:text-lg"
 		>
-			<div class="flex items-center gap-2 uppercase">
+			<div class="mx-auto flex items-center gap-2 uppercase">
 				<span class="text-pink_9">24/7</span> Emergency number
-				<a class="text-pink_9" href={`tel:${siteConfig.phone}`}>
+				<a
+					class="whitespace-nowrap text-pink_9"
+					href={`tel:${siteConfig.phone}`}
+				>
 					{siteConfig.phone}
 				</a>
 			</div>
 			<a
 				href={siteConfig.siteNavigation.Contact.href}
-				class="flex items-center gap-2"
+				class="mx-auto flex items-center gap-2"
 			>
 				Make an appointment
 				<CheckPink class="size-6" />

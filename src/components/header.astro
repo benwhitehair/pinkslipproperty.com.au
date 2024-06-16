@@ -16,8 +16,18 @@ const siteNavigation = Object.entries(siteConfig.siteNavigation).map(
 );
 ---
 
-<header class:list={[packs.innerPadding, 'bg-gray_6 py-1 text-white']}>
-	<div class:list={[packs.containerOuter, 'flex items-center justify-between']}>
+<header
+	class:list={[
+		packs.innerPadding,
+		'bg-gray_6 py-1 text-sm text-white sm:text-base',
+	]}
+>
+	<div
+		class:list={[
+			packs.containerOuter,
+			'flex flex-wrap items-center justify-between',
+		]}
+	>
 		<a class="flex items-center gap-2 hover:text-pink_8" href="#">
 			<PhoneIcon class="size-4 text-pink_8" />
 			{siteConfig.phone}
