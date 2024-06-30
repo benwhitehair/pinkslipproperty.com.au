@@ -24,6 +24,7 @@ const { description = siteConfig.description, title = siteConfig.title } =
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<meta name="robots" content="index, follow" />
 		<link
 			rel="manifest"
 			href="/manifest.webmanifest"
@@ -54,6 +55,22 @@ const { description = siteConfig.description, title = siteConfig.title } =
 		/>
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<link rel="canonical" href={`${siteConfig.baseUrl}${Astro.url.pathname}`} />
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'WebSite',
+				url: siteConfig.baseUrl,
+				name: title,
+				description: description,
+				publisher: {
+					'@type': 'Organization',
+					name: 'Pinkslip Property',
+					telephone: siteConfig.phone,
+					email: siteConfig.email,
+				},
+			})}
+		/>
 		<ViewTransitions />
 	</head>
 	<body class="flex min-h-svh flex-col font-sans text-gray_6">
