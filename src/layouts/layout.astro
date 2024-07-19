@@ -27,7 +27,7 @@ const { description = siteConfig.description, title = siteConfig.title } =
 		<meta name="robots" content="index, follow" />
 		<link
 			rel="manifest"
-			href="/manifest.webmanifest"
+			href="/site.webmanifest"
 			crossorigin="use-credentials"
 		/>
 		<meta property="og:title" content={title} />
@@ -54,8 +54,12 @@ const { description = siteConfig.description, title = siteConfig.title } =
 			sizes="180x180"
 		/>
 		<link rel="sitemap" href="/sitemap-index.xml" />
-		<link rel="canonical" href={`${siteConfig.baseUrl}${Astro.url.pathname}`} />
+		<link
+			rel="canonical"
+			href={`${siteConfig.baseUrl}${Astro.url.pathname.endsWith('/') ? Astro.url.pathname.slice(0, -1) : Astro.url.pathname}`}
+		/>
 		<script
+			is:inline
 			type="application/ld+json"
 			set:html={JSON.stringify({
 				'@context': 'https://schema.org',
@@ -65,7 +69,7 @@ const { description = siteConfig.description, title = siteConfig.title } =
 				description: description,
 				publisher: {
 					'@type': 'Organization',
-					name: 'Pinkslip Property',
+					name: siteConfig.title,
 					telephone: siteConfig.phone,
 					email: siteConfig.email,
 				},
