@@ -3107,37 +3107,6 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vite@5.4.4:
-    resolution: {integrity: sha512-RHFCkULitycHVTtelJ6jQLd+KSAAzOgEYorV32R2q++M6COBjKJR6BxqClwp5sf0XaBDjVMuJ9wnNfyAJwjMkA==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': ^18.0.0 || >=20.0.0
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      sass-embedded: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      sass-embedded:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-
   vite@5.4.8:
     resolution: {integrity: sha512-FqrItQ4DT1NC4zCUqMB4c4AZORMKIa0m8/URVCZ77OZ/QSNeJ54bU1vrFADbDsuwfIPcgknRkmqakQcgnL4GiQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -3489,7 +3458,7 @@ snapshots:
       '@vercel/nft': 0.27.4
       astro: 4.15.11(rollup@4.21.3)(typescript@5.6.2)
       esbuild: 0.21.5
-      vite: 5.4.4
+      vite: 5.4.8
     transitivePeerDependencies:
       - '@types/node'
       - encoding
@@ -7077,14 +7046,6 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.2
       vfile-message: 4.0.2
-
-  vite@5.4.4:
-    dependencies:
-      esbuild: 0.21.5
-      postcss: 8.4.45
-      rollup: 4.21.3
-    optionalDependencies:
-      fsevents: 2.3.3
 
   vite@5.4.8:
     dependencies:
